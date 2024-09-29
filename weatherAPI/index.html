@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp - Get your chilled conditions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div role="container" class="wrapper">
+        <div class="weather-card">
+
+            <div role="search" class="search-box">
+                <input type="text" placeholder="Search your city name" spellcheck="false">
+                <button class="btn"><img src="images/search.png" alt=""></button>
+            </div>
+
+            <div role="ViewWeather" class="weather-info">
+                <div class="weather-icon-div"><img class="weather-icon" src="images/clouds.png" alt=""></div>
+                <div class="celsius">22<span>°</span>c</div>
+                <div class="city-name">New York</div>
+            </div>
+
+            <div role="viewHumidity and windSpeed" class="additional-details">
+                <div class="content humidity">
+                    <div class="image"><img src="images/humidity.png" alt=""></div>
+                    <div class="text-content">
+                        <h3 id="humidity">64%</h3>
+                        <p class="size">Humidity</p>
+                    </div>
+                </div>
+                <div class="content wind-speed">
+                    <div class="image"><img src="images/wind.png" alt=""></div>
+                    <div class="text-content">
+                        <h3 id="windSpeed">18 km/h</h3>
+                        <p class="size">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

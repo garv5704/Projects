@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your Password</title>
+    <style>
+        body{
+            font-family: 'poppins',sans-serif;
+            background-color: rgb(47, 47, 255);
+            display: flex;
+            justify-content: center;
+        }
+        .inputBox{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            max-width: 340px;
+            margin: 250px auto;
+            border-radius: 10px;
+            padding: 10px 15px;
+            gap: 70px;
+
+        }
+
+        .inputBox input{
+            font-size: 17px;
+            border: 0;
+            outline: 0;
+            padding: 10px;
+        }
+
+        .inputBox img{
+            width: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="inputBox">
+        <input type="password" placeholder="Type your password" id="password">
+        <img src="eye-close.png" alt="" id="eyeicon">
+    </div>
+
+
+    <script>
+
+        let password = document.getElementById("password")
+        let eyeicon = document.getElementById("eyeicon")
+
+        eyeicon.onclick = ()=>{
+            if(password.type == "password"){
+                password.type = "text"
+                eyeicon.src = "eye-open.png"
+            }
+            else{
+                password.type = "password"
+                eyeicon.src = "eye-close.png"
+            }
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+--> Singular/Bi-Project
+--> SpotifyClone
+--> ReactJs
+--> Next / TypeScript
+--> Node
